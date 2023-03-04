@@ -868,10 +868,6 @@ contract bcmxStaking is Ownable, ReentrancyGuard {
         return true;
     }
 
-    function setToken (IERC20 _token) external onlyOwner {
-        
-    }
-
     function _claim(uint8 _pid, address _addr) internal {
         User storage user = users[_pid][_addr];
 
